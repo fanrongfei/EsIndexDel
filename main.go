@@ -25,12 +25,12 @@ var (
 )
 
 func main() {
-	eip := flag.String("ip", "10.100.25.23", "elasticsearcher节点ip")
+	eip := flag.String("ip", "10.100.0.1", "elasticsearcher节点ip")
 	eport := flag.Int("port", 9200, "elasticsearcher节点port")
 	rc := flag.Int("rc", 14, "日志保存周期(天)")
 	ct := flag.String("ct", "0 0 1 * * ?", "定时任务时间,默认每天凌晨1点执行")
 	u := flag.String("user", "elastic", "elasticsearcher用户")
-	p := flag.String("password", "zyzlxylx1.t2021", "elasticsearcher用户密码")
+	p := flag.String("password", "xxxxxx", "elasticsearcher用户密码")
 	indexarr:=flag.String("indexArr","logstash-nginx_access-*|logstash-bianque-*","定时删除的目标索引，如若添加新索引使用|隔开")
 	flag.Parse()
 	esIP = *eip
