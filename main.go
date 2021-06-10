@@ -43,7 +43,7 @@ func main() {
 	indexArr=trimeArr(strings.Split(*indexarr,"|"))
 	deleteIndex()
 }
-//排除空白行及开头或末尾添加| 哈哈哈
+//排除空白行及开头或末尾添加| 哈哈哈!
 func trimeArr(arr []string)(arrN []string){
 	for _,v:=range arr{
 		if strings.Trim(v," ")!=""{
